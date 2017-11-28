@@ -8,8 +8,3 @@
 - Andrei Navumau [tyziaa@gmail.com]
 - Allan D. Belgraves [abelgravesjr@gmail.com]
 - Wenyu Bao [wenyu.bao@gmail.com]
-
-1111111111
-222222222222
-33333
-4444
