@@ -8,5 +8,3 @@
 - Andrei Navumau [tyziaa@gmail.com]
 - Allan D. Belgraves [abelgravesjr@gmail.com]
 - Wenyu Bao [wenyu.bao@gmail.com]
-
-from allen
