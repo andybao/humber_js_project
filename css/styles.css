@@ -1,0 +1,88 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+/* GENERAL STYLES, CLASSES, COLORS */
+
+body {
+	font-size: 16px; /* it's 16px by default in Chrome, Firefox, just to be on the safe side*/
+	margin: 0; /*change default behavior of body*/
+	background-color: #636363;
+}
+
+.hidden {
+	position: absolute;
+	left: -10000px;
+}
+
+.dashed {
+	border: 1px dashed black;
+}
+
+#page {
+	max-width: 1024px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	color:#fff;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+.flex {
+	display:flex;
+	flex-flow: row wrap;	
+	padding: 20px;
+}
+
+img {
+	max-width: 100% !important;
+	height: auto;
+}
+
+/* HEADER SECTION */
+
+#main-header {
+	height: 200px;
+	background-color: orange;
+	padding: 20px;
+}
+
+/* MAIN SECTION */
+
+main {
+	height: 800px;
+	background-color: blue;
+	margin-top: 20px;
+	width:100%;
+	padding: 20px;
+}
+
+#map {
+	flex:2;
+	margin-right: 10px;
+	background-color: pink;
+	height:600px;
+	padding: 20px;
+}
+
+#right-sidebar {
+	flex:1;
+	margin-left: 10px;
+	background-color: green;
+	height:600px;
+	padding: 20px;
+}
+
+/* FOOTER SECTION */
+#main-footer {
+	height: 200px;
+	background-color: orange;
+	padding: 20px;
+}
