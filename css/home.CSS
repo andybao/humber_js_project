@@ -65,6 +65,15 @@ body {
   color: #824328;
 }
 
+.dashed {
+	border: 1px dashed #fff	;
+}
+
+#logo {
+	clear:both;
+}
+
+
 /* NAVIGATION */
 .menu-bar
 {
