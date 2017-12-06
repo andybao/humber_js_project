@@ -42,17 +42,12 @@ body {
 }
 
 img {
-	max-width: 100% !important;
+	/*max-width: 100% !important;*/
 	height: auto;
 }
 
 /* HEADER SECTION */
-
-#main-header {
-	height: 200px;
-	background-color: orange;
-	padding: 20px;
-}
+/* Styles are in home.css*/
 
 /* MAIN SECTION */
 
@@ -69,7 +64,12 @@ main {
 	margin-right: 10px;
 	background-color: pink;
 	height:600px;
+	width:100%;
 	padding: 20px;
+}
+
+#map img {
+	/*max-width: inherit;*/
 }
 
 #right-sidebar {
@@ -81,8 +81,4 @@ main {
 }
 
 /* FOOTER SECTION */
-#main-footer {
-	height: 200px;
-	background-color: orange;
-	padding: 20px;
-}
+/* Styles are in home.css*/
