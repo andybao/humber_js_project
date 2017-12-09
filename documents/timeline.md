@@ -20,5 +20,4 @@
 ## Gurinder Girn
 - page 'home'
 - page 'contact_us'
-- menu section about indian cuisine
 
