@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#contentdiv {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    width: 320px;
+    height: 568px;
+
+}
+#startdiv{
+    width: 320px;
+    height: 568px;
+    background-image: url("image/background.png");
+    /*Active following line, then run the demo again.*/
+    /*background-repeat: no-repeat;*/
+}
+#startdiv button{
+    position: absolute;
+    top: 500px;
+    left: 82px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #c4c9ca;
+}

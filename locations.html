@@ -6,16 +6,45 @@
     <title>Locations of Andre's Restaurant</title>
     <meta name="description" content="Locations where you can visit Andre's restaurant">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
     <script type="text/javascript" src="js/script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwoSZS2VyK-u2WX8bgo4iHOHFQk23-13k&callback=initMap">
+    </script>
   </head>
 
   <body>
-    <div id="page">
+    <div class="page-wrapper">
     
-      <header id="main-header" class="dashed">
-        Header
-        <!-- Header will be included from external file -->
+      <!--start header-->
+      <header id ="header">
+        <h1 class="hidden">Andre's Restaurant</h1>
+        <div id="head-contact">100 Main Avenue, Brampton L6P7H6-123.456.7800</div>
+        <div id="reservation"><a href="#" title="Reservation">
+          Make a reservation <i class="fa fa-cutlery" aria-hidden="false"></i></a></div>
+        <!--website logo-->
+        <div id="logo">
+        <a href="home.html" title="Andre's restaurant logo">
+          <img class="logo_image"src="images/logo.png" alt="Andre's restaurant logo" />
+        </a>
+        </div>
+      <!--header menu-->
+        <nav class="menu-bar">
+          <ul>
+            <li><a href="home.html" title="home page">home</a></li>
+            <li><a href="about_us.html" title="About restaurant">about</a></li>
+            <li><a href="menu.html"title="menu items">menu</a></li>
+            <li><a href="gift_cards.html" title="gift card">gift&#160;cards</a></li>
+            <li><a href="events_book.html" title="events and bookings">events</a></li>
+            <li><a href="specials.html" title="specials">specials</a></li>
+            <li><a href="contest.html" title="contest">contests</a></li>
+            <li><a href="locations.html" title="location">locations</a></li>
+            <li><a href="contact_us.html" title="contact information">contact</a></li>
+          </ul>
+        </nav>
+        <!-- end of header menu -->
       </header>
+      <!--header end-->
       
       <main class="dashed">
         <h1>Locations of Andre's Restaurant</h1>
@@ -33,10 +62,27 @@
       </main>
     
       <section>
-        <footer id="main-footer" class="dashed">
-          Footer
-           <!-- Footer will be included from external file -->
-        </footer>
+        <!--footer start-->
+      <footer id="footer">
+        <!--footer menu-->
+        <nav class="footer-menu-bar">
+          <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="about_us.html">about</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="events_book.html">events</a></li>
+            <li><a href="contact_us.html">contact</a></li>
+          </ul>
+        </nav>
+        <a href="home.html" title="Andre's restaurant logo">
+          <img class="logo_image" src="images/logo.png" alt="Andre's restaurant logo" />
+        </a>
+        <div id="footer-btm">
+          <p>copyright © 2017 Andre&rsquo;s Restaurant.All rights reserved.</p>
+          <p>100 Main Avenue, Brampton,Canada.L6P7H6</p>
+        </div>
+      </footer>
+      <!--footer end-->
       </section>
 
     </div>

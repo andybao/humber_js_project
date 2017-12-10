@@ -65,6 +65,15 @@ body {
   color: #824328;
 }
 
+.dashed {
+	border: 1px dashed #fff	;
+}
+
+#logo {
+	clear:both;
+}
+
+
 /* NAVIGATION */
 .menu-bar
 {
@@ -220,16 +229,24 @@ h3
 }
 .footer-menu-bar
 {
-	width:100%;
-	/* left:400px; */
 	text-align:center;
 }
+
+.footer-menu-bar ul {
+	width:480px;
+	margin:0 auto;
+	display:flex;
+	flex-flow:row wrap;
+	padding:15px 0;
+}
+
 .footer-menu-bar li
 {
 	display:inline-block;
-	margin-right:0.2em;
+	/*margin-right:0.2em;*/
 	list-style:none;
-	padding:0.3em;
+	/*padding:0.3em;*/
+	flex:1;
 }
 .footer-menu-bar a
 {

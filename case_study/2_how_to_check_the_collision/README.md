@@ -1,0 +1,2 @@
+- It changes pic css top property to move the plane pic.
+- It analyses collision by offsetTop and offsetleft.
