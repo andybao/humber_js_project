@@ -129,6 +129,7 @@ main
 	width:1024px;
 	margin-left:auto;
 	margin-right:auto;
+	color:black;
 }
 #main-content
 {
@@ -167,6 +168,7 @@ h3
 	color:white;
 	text-decoration:none;
 	padding:0.5em;
+	border-radius:4px;
 }
 .same-sec a:hover
 {
@@ -194,6 +196,7 @@ h3
 	color:white;
 	text-decoration:none;
 	padding:0.5em;
+	border-radius:4px;
 	
 }
 #gallery-button a:hover
