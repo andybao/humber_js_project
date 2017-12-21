@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#contentdiv {
+    position: absolute;
+
+    left: 500px;
+    width: 320px;
+    height: 568px;
+}
+#startdiv{
+    width: 320px;
+    height: 568px;
+    text-align: center;
+    background-image: url(../images/game/start_2.png);
+}
+#startdiv p {
+    position:absolute;
+    top: 350px;
+    left: 70px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+#startdiv button{
+    position: absolute;
+    top: 500px;
+    left: 82px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #c4c9ca;
+}
+#scorediv{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+#maindiv{
+    width: 320px;
+    height: 568px;
+    background-image:url(../images/game/background.png) ;
+    display: none;
+}
+
+#end_div{
+    position: absolute;
+    top: 210px;
+    left: 75px;
+    width: 160px;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    background-color:#d7ddde;
+    display: none;
+    z-index: 2;
+}
+
+#finalscore{
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#end_div button{
+    margin-top:10px ;
+    margin-bottom: 10px;
+    width: 90px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
