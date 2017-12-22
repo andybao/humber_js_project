@@ -6,7 +6,7 @@ main
 	width:1024px;
 	margin-left:auto;
 	margin-right:auto;
-	display:flex;
+	margin-top:1em;
 	color:#000000;
 }
 #section-contact h3
@@ -17,26 +17,19 @@ main
 	font-size:30px;
 }
 
-#contact-info
-{
-	flex:1 0 auto;
-	margin:0.5em;
-	padding:0.5em;
-}
 #section-contact
 {
 	margin:0.5em;
 	padding:0.5em;
-	flex:1 0 auto;
 }
 #contact-form div
 {
 	color:#824328;
 	font-weight:lighter;
-	font-size:24px;
-	margin-bottom:1em;
+	font-size:20px;
+	margin-bottom:0.6em;
 }
-input,textarea
+input,textarea,select
 {
 	padding:1em;
 	width:450px;
@@ -44,8 +37,6 @@ input,textarea
 }
 .submit
 {
-	/* margin:auto; */
-	/* display:block; */
 	background-color:#824328;
 	color:white;
 	text-decoration:none;
@@ -68,3 +59,4 @@ h4
 {
 	text-align:center;
 }
+

@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/home.js"></script>
+		<script src = "js/header_footer.js"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Andre&rsquo;s Restaurant</title>
 		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/header_footer.css">
+		
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="js/home.js"></script>
+		
 		
 	</head>
 	<body>
@@ -35,17 +40,25 @@
 						<li><a href="contest.html" title="contest">contests</a></li>
 						<li><a href="locations.html" title="location">locations</a></li>
 						<li><a href="contact_us.html" title="contact information">contact</a></li>
+						<li><a href="careers.html" title="career information">career</a></li>
 					</ul>
 				</nav>
 				<!-- end of header menu -->
 			</header>
 			<!--header end-->
 			<!-- Banner-->
-            <section class="banner">
-				<h2 class="hidden">Banner Image</h2>
-					<a href="#"><img id="banner-img" src="images/home_banner.jpg" alt="restaurant banner"></a></li>
+            <div class="slide-container">
+				<div class="Slides fadeAnimate">
+					<img src="images/home_banner.jpg" alt="slideshow-image1">
+				 </div>
+				 <div class="Slides fadeAnimate">
+					<img src="images/home_food1.jpg" alt="slideshow-image1">
+				 </div>
+				 <div class="Slides fadeAnimate">
+					<img src="images/home_special_events.jpg" alt="slideshow-image1">
+				 </div>
 				
-			</section>
+			</div>
             <!--End Banner-->
 
 			<main id="main">
@@ -82,10 +95,10 @@
 				
 				<section id="gallery">
 					<div id="image-gallery">
-						<a href="#"><img src="images/home_about.jpg" alt="image1" /></a>
-						<a href="#"><img src="images/home_menu.jpg" alt="image2" /></a>
-						<a href="#"><img src="images/home_special_events.jpg" alt="image3" /></a>
-						<a href="#"><img src="images/home_banner.jpg" alt="image4" /></a>
+						<img src="images/home_about.jpg" alt="image1" />
+						<img src="images/home_menu.jpg" alt="image2" />
+						<img src="images/home_special_events.jpg" alt="image3" />
+						<img src="images/home_banner.jpg" alt="image4" />
 					</div>
 					<div id="gallery-button">
 						<a href="gallery.html" title="Restaurant Gallery">
@@ -107,6 +120,7 @@
 						<li><a href="menu.html">menu</a></li>
 						<li><a href="events_book.html">events</a></li>
 						<li><a href="contact_us.html">contact</a></li>
+						<li><a href="careers.html" title="career information">career</a></li>
 					</ul>
 				</nav>
 				<a href="home.html" title="Andre's restaurant logo">

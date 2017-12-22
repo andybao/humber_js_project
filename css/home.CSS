@@ -1,133 +1,46 @@
 /******************************/
-/* GENERAL */
-/* HEADER */
-/* NAVIGATION */
-/* MAIN */
-/* FOOTER */
-
-/* GENERAL */
-html {
-  box-sizing:border-box;
-  font-family:Times new roman,Helvetica,sans-serif;
-  
-}
-*,*:before,*:after {
-  box-sizing:inherit;
-}
-body {
-  margin:0 auto;
-  color:#000000;
-	font-size:16px;
-}
-.page-wrapper 
-{
-  color: #909090;
-  margin:0 auto;
-}
-.hidden
-{
-	position:absolute;
-	left:-100000px;
-}
-
-/* HEADER */
-#header
-{
-	width:100%;
-	padding:0.5em;
-	background-color:#000000;
-	color:#d3af80;
-	/* height:120px; */
-	position:relative;
-	border-bottom:4px solid #d3af80;
-}
-#head-contact
-{
-	float:right;
-}
-#reservation
-{
-	float:left;
-	clear:both;
-}
-#reservation a
-{
-	text-decoration:none;
-	color:#d3af80;
-	font-size:20px;
-}
-#reservation a:active
- {
-  color: #824328;
-}
-#reservation a:hover
-{
-  color: #824328;
-}
-
-.dashed {
-	border: 1px dashed #fff	;
-}
-
-#logo {
-	clear:both;
-}
-
-
-/* NAVIGATION */
-.menu-bar
-{
-	width:100%;
-	text-align:center;
-	position:relative;
-}
-.menu-bar li
-{
-	display:inline-block;
-	margin-right:0.2em;
-	list-style:none;
-	padding:0.4em;
-	vertical-align:top;
-	position:relative;
-}
-.menu-bar a
-{
-	text-decoration:none;
-	text-transform:uppercase;
-	color:#d3af80;
-	font-weight:bold;
-}
-.menu-bar a:active {
-  color: #824328;
-}
-.menu-bar a:hover {
-  color: #824328;
-}
-.menu-bar li li
-{
-	display:block;
-	width:130px;
-	background-color:#000000;
-	padding:0.5em;
-	border:1px solid #d3af80;
-}
-.logo_image
-{
-	margin:auto;
-	display:block;
-	width:190px;
-	height:120px;
-}
 /* Banner */
-#banner-img
+/* MAIN */
+
+
+
+/* Banner */
+.slide-container
 {
-	width:100%;
-	height:700px;
+	width:1024px;
+	height:600px;
 	margin-bottom:1em;
+	position: relative;
+    margin: auto;
+	display:block;
 }
-.myslides img
+.slide-container  > div { 
+
+    position: absolute; 
+
+}
+.Slides img
 {
-	width:100%;
+    /* display:block; */
+	width:1024px;
+	height:600px;
+}
+/* Fading animation */ 
+.fadeAnimate {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeAnimate {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fadeAnimate {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 /* MAIN */
 main
@@ -215,56 +128,4 @@ h3
 #gallery 
 {
 	margin-bottom:3em;
-}
-/* FOOTER */
-#footer
-{
-	clear:both;
-	width:100%;
-	padding:0.5em;
-	background-color:#000000;
-	color:#d3af80;
-	position:relative;
-	border-top:4px solid #d3af80;	
-}
-.footer-menu-bar
-{
-	text-align:center;
-}
-
-.footer-menu-bar ul {
-	width:480px;
-	margin:0 auto;
-	display:flex;
-	flex-flow:row wrap;
-	padding:15px 0;
-}
-
-.footer-menu-bar li
-{
-	display:inline-block;
-	/*margin-right:0.2em;*/
-	list-style:none;
-	/*padding:0.3em;*/
-	flex:1;
-}
-.footer-menu-bar a
-{
-	text-decoration:none;
-	text-transform:uppercase;
-	color:#d3af80;
-	font-weight:bold;
-}
-.footer-menu-bar a:active {
-  color: #824328;
-}
-.footer-menu-bar a:hover {
-  color: #824328;
-}
-#footer-btm
-{
-	clear:both;
-	padding:1em;
-	color:#d3af80;
-	text-align:center;
 }
