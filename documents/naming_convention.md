@@ -16,6 +16,14 @@
 - contact_us.html
 - contact_us.css
 - contact_us.
+### Gallery: Gurinder
+- gallery.html
+- gallery.css
+- gallery.js
+### Reservation : Gurinder
+- reserve.html
+- reserve.css
+- reserve.js
 ### Menu: ANDY
 - menu.html
 - menu.css
