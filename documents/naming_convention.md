@@ -12,6 +12,11 @@
 - home.html
 - home.css
 - home.js	
+### Header and footer: Gurinder
+- header.html
+- footer.html
+- header_footer.css
+- header_footer.js
 ### Contact Us: GURINDER
 - contact_us.html
 - contact_us.css
