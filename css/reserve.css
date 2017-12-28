@@ -1,0 +1,55 @@
+#main
+{
+	border:1px solid #fce2af;
+	padding:1em;
+	margin-bottom:1em;
+	width:1024px;
+	margin-top:1em;
+	margin-left:auto;
+	margin-right:auto;
+	color:black;
+}
+
+h2
+{
+	color:#824328;
+	text-align:center;
+	font-size:30px;
+	margin-bottom:2em;
+}
+#reserve-sec,p
+{
+	text-align:center;
+	font-size:18px;
+	margin-bottom:2em;
+}
+input,select
+{
+	padding:1em;
+	width:250px;
+	border:1px solid #824328;
+	margin-right:2em;
+	margin-bottom:2em;
+	font-size:16px;
+	color:#824328;
+	
+}
+select option
+{
+	font-size:16px;
+	color:#824328;
+}
+
+.submit
+{
+	background-color:#824328;
+	color:white;
+	text-decoration:none;
+	padding:1em;
+	border-radius:4px;
+	border:1px solid #824328;
+}
+.submit:hover
+{
+	background-color:maroon;
+}
