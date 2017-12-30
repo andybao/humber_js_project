@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+#bodydiv {
+    background: url(../images/game/page_background.png);
+}
 #contentdiv {
     position: absolute;
 
