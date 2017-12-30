@@ -1,0 +1,152 @@
+/* GENERAL */
+body {
+  margin:0 auto;
+  color:#000000;
+	font-size:16px;
+}
+
+/* HEADER */
+.header_hidden
+{
+	position:absolute;
+	left:-100000px;
+}
+#header_div
+{
+	width:100%;
+	padding:0.5em;
+	background-color:#000000;
+	color:#d3af80;
+	/* height:120px; */
+	position:relative;
+	border-bottom:4px solid #d3af80;
+}
+#header_contact
+{
+	float:right;
+}
+#header_reservation
+{
+	float:left;
+	clear:both;
+}
+#header_reservation a
+{
+	text-decoration:none;
+	color:#d3af80;
+	font-size:24px;
+}
+#header_reservation a:active
+ {
+  color: #824328;
+}
+#header_reservation a:hover
+{
+  color: #824328;
+}
+
+.dashed {
+	border: 1px dashed #fff	;
+}
+
+#logo {
+	clear:both;
+}
+
+
+/* NAVIGATION */
+.menu-bar
+{
+	width:100%;
+	text-align:center;
+	position:relative;
+}
+.menu-bar li
+{
+	display:inline-block;
+	margin-right:0.2em;
+	list-style:none;
+	padding:0.4em;
+	vertical-align:top;
+	position:relative;
+}
+.menu-bar a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#d3af80;
+	font-weight:bold;
+}
+.menu-bar a:active {
+  color: #824328;
+}
+.menu-bar a:hover {
+  color: #824328;
+}
+.menu-bar li li
+{
+	display:block;
+	width:130px;
+	background-color:#000000;
+	padding:0.5em;
+	border:1px solid #d3af80;
+}
+.logo_image
+{
+	margin:auto;
+	display:block;
+	width:190px;
+	height:120px;
+}
+/* FOOTER */
+#footer
+{
+	clear:both;
+	width:100%;
+	padding:0.5em;
+	background-color:#000000;
+	color:#d3af80;
+	position:relative;
+	border-top:4px solid #d3af80;	
+}
+.footer-menu-bar
+{
+	text-align:center;
+}
+
+.footer-menu-bar ul {
+	width:480px;
+	margin:0 auto;
+	display:flex;
+	flex-flow:row wrap;
+	padding:15px 0;
+}
+
+.footer-menu-bar li
+{
+	display:inline-block;
+	/*margin-right:0.2em;*/
+	list-style:none;
+	/*padding:0.3em;*/
+	flex:1;
+}
+.footer-menu-bar a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#d3af80;
+	font-weight:bold;
+}
+.footer-menu-bar a:active {
+  color: #824328;
+}
+.footer-menu-bar a:hover {
+  color: #824328;
+}
+#footer-btm
+{
+	clear:both;
+	padding:1em;
+	color:#d3af80;
+	text-align:center;
+}
