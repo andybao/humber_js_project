@@ -13,6 +13,13 @@ setInterval(function() {
 		 .appendTo('.slide-container')		 ;
 },  3000);
 
+$(function() {
+  $('#header').load('header.html');
+});
+$(function() {
+  $('#footer').load('footer.html');
+});
+
 
 //Image gallery js - Gallery Page
  bigImg = document.getElementById("img1");

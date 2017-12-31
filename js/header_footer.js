@@ -2,7 +2,7 @@
 $(document).ready(function()
 {
 setInterval(function(){
-  $('#reservation a').fadeOut(500, function () {
+  $('#header_reservation a').fadeOut(500, function () {
        $(this).fadeIn(300);
     });
 },2000);
