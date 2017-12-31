@@ -6,6 +6,12 @@ $(document).ready(function(){
 		
 	});
 });
+$(function() {
+  $('#header').load('header.html');
+});
+$(function() {
+  $('#footer').load('footer.html');
+});
 //Setup Listener
 window.onload = ready;
 function ready()

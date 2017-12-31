@@ -1,3 +1,10 @@
+$(function() {
+  $('#header').load('header.html');
+});
+$(function() {
+  $('#footer').load('footer.html');
+});
+
 // Get Google map
 
 function initMap() {
