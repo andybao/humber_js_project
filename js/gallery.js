@@ -20,4 +20,10 @@ function slideshow()
 	{
 		bigImg.src = "images/home_party.jpeg";
 	}
+  $(function() {
+    $('#header').load('header.html');
+  });
+  $(function() {
+    $('#footer').load('footer.html');
+  });
 }

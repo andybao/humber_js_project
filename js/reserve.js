@@ -24,7 +24,14 @@ function ready()
 		
 		
 	return false;
-	} 
+	}
+
+  $(function() {
+    $('#header').load('header.html');
+  });
+  $(function() {
+    $('#footer').load('footer.html');
+  });
 	
 } 
 
