@@ -1,89 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+  <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/reserve.js"></script>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Andre&rsquo;s Restaurant-Reservation</title>
-		<link rel="stylesheet" type="text/css" href="css/reserve.css">
-		<link rel="stylesheet" type="text/css" href="css/header_footer.css">
-		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	</head>
-	<body>
-		<!-- start wrap -->
-		<div class="page-wrapper">
-		<!--start header-->
-			<header>
-                          <div id="header"></div>
-				<!-- end of header menu -->
-			</header>
-			<!--header end-->
-			<main id="main">
-			  <h2>Reservations</h2>
-			  <p>Reserve a table here and We'll get back to you.</p>
-			  <section id="reserve-sec">
-			  <h3 class="hidden">Reservation form</h3>
-			  
-			  <form action="reserve.html" method="post" name="form1" id="reserve-form">
+	<script src="js/reserve.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Andre&rsquo;s Restaurant-Reservation</title>
+	<link rel="stylesheet" type="text/css" href="css/reserve.css">
+	<link rel="stylesheet" type="text/css" href="css/header_footer.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+	<!-- start wrap -->
+	<div class="page-wrapper">
+	  <!--start header-->
+	  <header>
+		<div id="header"></div>
+	  </header>
+	  <!--header end-->
+	  <main id="main">
+		<h2>Reservations</h2>
+		<p id="main-p">Reserve a table here and We'll get back to you.</p>
+		<section id="reserve-sec">
+		  <h3 class="hidden">Reservation form</h3>
+		  <form action="reserve.html" method="post" name="form1" id="reserve-form">
+		    <div>
 			  <!--Date field-->
-			  <div>
-				<input type="date" id="form-date" name="userdate"  />
+			  <label for="userdate">Date:</label>
+			  <input type="date" id="form-date" name="userdate" />
 			  <!-- Time field -->
-				<!-- <input type="time" id="form-time" name="usertime"  /> -->
-				<select id="form-time"  name="time">
-				  <option value="PS">12PM</option>
-				  <option  value="1P">1 PM</option>
-				  <option value="2P">2 PM</option>
-				  <option value="3P">3 PM</option>
-				  <option value="4P">4 PM</option>
-				  <option value="5P">5 PM</option>
-				  <option value="6P">6 PM</option>
-				  
-				  
-				  <option value="PS">12PM</option>
-				  <option  value="1P">1 PM</option>
-				  <option value="2P">2 PM</option>
-				  <option value="3P">3 PM</option>
-				  <option value="4P">4 PM</option>
-				  <option value="5P">5 PM</option>
-				  <option value="6P">6 PM</option>
-				  
-				  <option value="PS">12PM</option>
-				  <option  value="1P">1 PM</option>
-				  <option value="2P">2 PM</option>
-				  <option value="3P">3 PM</option>
-				  <option value="4P">4 PM</option>
-				  <option value="5P">5 PM</option>
-				  <option value="6P">6 PM</option>
-				</select>
-			  <!-- Party size field -->
-				<select id="party-size" name="party">
-				  <option value="PS">Party Size</option>
-				  <option  value="1P">1 Person</option>
-				  <option value="2P">2 People</option>
-				  <option value="3P">3 People</option>
-				  <option value="4P">4 People</option>
-				  <option value="5P">5 People</option>
-				  <option value="6P">6 People</option>
-				</select>
-				
-			  </div>
-			  <!-- Book now Button -->
-			  <div>
-				<button type="submit"  class="submit" id="submit-form" name="submit" onclick="">BOOK NOW</button>
-			  </div>
-			  </form>
-			  </section>
-			  
-			</main>
-			
-			<!--footer start-->
-			<footer>
-				<!--footer menu-->
-                                <div id="footer"></div>
-			</footer>
-			<!--footer end-->
-		</div>
-		<!--page wrap end-->
-	</body>
+			  <label for="usertime">Time(10:00-21:00):</label>
+			  <input type="time" id="form-time" name="usertime" min="10:00" max="21:00"  />
+			   <span class="validity"></span>
+			 </div>
+		      <!-- Party size field -->
+			  <select id="party-size" name="party">
+			    <option  value="1 Person">1 Person</option>
+			    <option value="2 Persons">2 People</option>
+			    <option value="3 Persons">3 People</option>
+			    <option value="4 Persons">4 People</option>
+			    <option value="5 Persons">5 People</option>
+			    <option value="6 Persons">6 People</option>
+			  </select>
+		    <!-- Book now Button -->
+		    <div>
+			  <button type="submit"  class="submit" id="submit-form" name="submit" onclick="">BOOK NOW</button>
+		    </div>
+		  </form>
+		  <div id="message"></div>
+		</section>  
+	  </main>
+	  <!--footer start-->
+	  <footer>
+		<div id="footer"></div>
+  	  </footer>
+	  <!--footer end-->
+	</div>
+	<!--page wrap end-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/header_footer.js"></script>
+  </body>
 </html>

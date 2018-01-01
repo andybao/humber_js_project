@@ -1,3 +1,8 @@
+.hidden
+{
+	position:absolute;
+	left:-10000px;
+}
 #main
 {
 	border:1px solid #fce2af;
@@ -32,12 +37,24 @@ input,select
 	margin-bottom:2em;
 	font-size:16px;
 	color:#824328;
-	
 }
-select option
+select option,label
 {
 	font-size:16px;
 	color:#824328;
+}
+input + span {
+  padding-right: 10px;
+}
+
+input:invalid+span:after {
+  position: absolute;
+  content: 'invalid';
+}
+
+input:valid+span:after {
+  position: absolute;
+  content: 'valid';
 }
 
 .submit
