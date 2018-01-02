@@ -8,5 +8,11 @@ setInterval(function(){
 },2000);
 });
 
+$(function() {
+  $("#header").load("header.html");
+});
+$(function() {
+  $('#footer').load('footer.html');
+});
 
 

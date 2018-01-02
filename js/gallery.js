@@ -20,4 +20,5 @@ function slideshow()
 	{
 		bigImg.src = "images/home_party.jpeg";
 	}
+  
 }

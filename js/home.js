@@ -19,15 +19,5 @@ setInterval(function() {
 	$('.home-p').hide();
 	$('.home-p').delay(5000).slideDown(3000);
 	
-
-$(function() {
-  $('#header').load('header.html');
-});
-$(function() {
-  $('#footer').load('footer.html');
-});
-
-
-
 });
 

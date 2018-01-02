@@ -80,30 +80,8 @@ function ready()
 	if(endmon <10)
 	{ endmon = '0' + endmon; }
 	
-	enddate = endyear + '-' + endmon + '-' + endday; 
+enddate = endyear + '-' + endmon + '-' + endday; 
 	
 	document.getElementById("form-date").setAttribute("max",enddate);
   
 } 
-
-
-
-/*
-
-
-
-
-
-
-
-
-
-
-  $(function() {
-    $('#header').load('header.html');
-  });
-  $(function() {
-    $('#footer').load('footer.html');
-  });
-
-*/
