@@ -20,4 +20,6 @@
 ## Gurinder Girn
 - page 'home'
 - page 'contact_us'
+- page 'reserve'
+- page 'gallery'
 

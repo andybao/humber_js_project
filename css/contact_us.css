@@ -34,7 +34,7 @@ main
 	font-size:20px;
 	margin-bottom:0.6em;
 }
-input,textarea,select
+input:not(.submit),textarea,select
 {
 	padding:1em;
 	width:450px;
