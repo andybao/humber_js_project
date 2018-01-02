@@ -27,10 +27,12 @@
 			  <!--Date field-->
 			  <label for="userdate">Date:</label>
 			  <input type="date" id="form-date" name="userdate" />
+			  <label id="dateErr"></label>
 			  <!-- Time field -->
 			  <label for="usertime">Time(10:00-21:00):</label>
 			  <input type="time" id="form-time" name="usertime" min="10:00" max="21:00"  />
 			   <span class="validity"></span>
+			   <label id="timeErr"></label>
 			 </div>
 		      <!-- Party size field -->
 			  <select id="party-size" name="party">
@@ -42,6 +44,7 @@
 			    <option value="5 Persons">5 People</option>
 			    <option value="6 Persons">6 People</option>
 			  </select>
+			  <label id="partyErr"></label>
 		    <!-- Book now Button -->
 		    <div>
 			  <button type="submit"  class="submit" id="submit-form" name="submit" onclick="">BOOK NOW</button>
@@ -57,7 +60,7 @@
 	  <!--footer end-->
 	</div>
 	<!--page wrap end-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/header_footer.js"></script>
+	<!-- <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/header_footer.js"></script> -->
   </body>
 </html>

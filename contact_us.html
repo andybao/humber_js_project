@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/contact_us.js"></script>
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Andre&rsquo;s Restaurant</title>
 	<link rel="stylesheet" type="text/css" href="css/contact_us.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/contact_us.js"></script>
   </head>
   <body>
 	<!-- start wrap -->
@@ -14,7 +15,6 @@
 	  <!--start header-->
 	  <header>
             <div id="header"></div>
-	    <!-- end of header menu -->
 	  </header>
 	  <!--header end-->
 	  <!-- Main Body -->
@@ -53,18 +53,7 @@
 				  <option value="others">Others</option>
 				</select>
 			  </div>
-			  <!-- Location field -->
-			  <!-- <div>
-				<label for="form-location">Location:</label>
-			  </div>
-			  <div>
-				<select id="form-location" name="Address">
-				  <option value="Loc1" Selected>Loc1</option>
-				  <option value="Loc2">Loc2</option>
-				  <option value="Loc3">Loc3</option>
-				  <option value="Loc4">Loc4</option>
-				</select>
-			  </div> -->
+			 
 			  <!-- Message field -->
 			  <div>
 				<label for="form-message">Message:</label>
@@ -74,7 +63,7 @@
 			  </div>
 			  <!-- Submit button -->
 			  <div>
-				<button type="submit"  class="submit" id="submit-form" name="submit" onclick="">SUBMIT</button>
+				<input type="submit"  class="submit" id="submit-form" name="submit" value="submit" />
 			  </div>
 		    </form>
 			<!-- Subscribe for news and updates -->
@@ -86,7 +75,7 @@
 			      <div class="para">
 				    <input type="email" id="subs-email" name="subsemail"
 				    placeholder="john@example.com" />
-				    <button type="submit" class="submit"  id="submit-email" name="submit" onclick="">SIGN UP</button>
+				    <button type="submit" class="submit"  id="submit-email" name="submit" onclick="">Sign Up</button>
 				    <label id="subsErr"></label>
 			      </div>
 			    </form>
@@ -96,14 +85,13 @@
 	  </main>			
 	  <!--footer start-->
 	  <footer>
-		<!--footer menu-->
                 <div id="footer"></div>
 	  </footer>
 	  <!--footer end-->
 	</div>
 	<!--page wrap end-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/header_footer.js"></script>
+	<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+	<!-- <script src="js/header_footer.js"></script> -->
   </body>
   
 </html>

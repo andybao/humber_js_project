@@ -10,39 +10,28 @@ function ready()
 	  var d = document.getElementById("form-date").value;
 	  var t =  document.getElementById("form-time").value;
 	  var ps = document.getElementById("party-size");
-	   var days = d.getDay();
-	  console.log(days);
-	  //validate date
-	 /*  console.log(d);
-	  var days = d.getDate();
-	  console.log(days);
-	  var month = d.getMonth();
-	  var years = d.getFullYear();
-	  
-	 // console.log(month);
-	  if(d.getDate() === "")// || month.value === "" || years.value === "")
-	  {
-		  alert("Select Date");
-		  t.focus();
-		  return false;
-	  } 
-	    */
+	 //Validate Date
+	if(d ==="" || d === null)
+	{
+		var dateMsg = document.getElementById("dateErr");
+		dateMsg.innerHTML = "*Enter Date";
+		dateMsg.style.color = "orange";
+		return false;
+	}
 	  //validate time
-	  if(t.value === "" || t.indexOf(":")<0)
+	  if(t === "" || t.indexOf(":")<0)
 	  {
-		  alert("Select Time");
-		  t.focus();
+		  var timeMsg = document.getElementById("timeErr");
+		timeMsg.innerHTML = "*Enter Time";
+		timeMsg.style.color = "orange";
 		  return false;
 	  } 
-	   
-	 
-	  
-	  
 		//validate party size
 	  if(ps.value==="")
 		{
-			alert("choose party size");
-			ps.focus();
+			var partyMsg = document.getElementById("partyErr");
+		partyMsg.innerHTML = "*Choose party size";
+		partyMsg.style.color = "orange";
 			return false;
 		}		
 	  //hide main-para and form on submit
@@ -54,7 +43,32 @@ function ready()
 	  m.style.fontSize = "20px";
 	  m.innerHTML = "Table is reserved. <br>Reservation details are:<br> Date: " + d + "<br> Time: " + t + "<br> Party Size: " + ps.value + ".";
 	return false;
-	} 
+	} //end of onsubmit process form
+	
+	//on blur for Date
+
+	var dateBlur = document.getElementById("dateErr");
+	formHandle.userdate.onblur = endDate;
+	function endDate()
+	{
+		dateBlur.innerHTML = "";
+	}
+	//on blur for Time
+
+	var timeBlur = document.getElementById("timeErr");
+	formHandle.usertime.onblur = endTime;
+	function endTime()
+	{
+		timeBlur.innerHTML = "";
+	}
+	//on blur for Party size
+
+	var partyBlur = document.getElementById("partyErr");
+	formHandle.party.onblur = endParty;
+	function endParty()
+	{
+		partyBlur.innerHTML = "";
+	}
 	// set min date value
 	 var today = new Date();
 	var day = today.getDate();

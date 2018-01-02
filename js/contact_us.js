@@ -1,11 +1,11 @@
 //Contact Subscribe here (toggle function)
-$(document).ready(function(){
+ $(document).ready(function(){
 	$('#content-box').hide();
 	$('h4').click(function(){
 			$('#content-box').toggle(1000);
 		
 	});
-});
+}); 
 
 //Setup Listener
 window.onload = ready;
@@ -21,8 +21,7 @@ function processForm()
 	var nameValue = document.getElementById("form-name");
 	var emailValue = document.getElementById("form-email");
 	var subjectValue = document.forms[0].subject.value;
-	var locationValue = document.forms[0].Address.value;
-	var messageValue = document.forms[0].message.value;
+	var messageValue = document.getElementById("form-message");
 	
 	//Name validation 
 	if(nameValue.value === "" || nameValue.value === null)
@@ -43,7 +42,7 @@ function processForm()
 			return false;
 		}
 	//Message box validation
-	if(messageValue === "" || messageValue ===null)
+	if(messageValue.value === "" || messageValue.value ===null)
 	{
 		var formMsg = document.getElementById("messageErr");
 		formMsg.innerHTML = "*what's on your mind";
@@ -51,8 +50,10 @@ function processForm()
 		formMsg.focus();
 		return false;
 	}
+	
 	//display message for confirmation
-	alert("Thank You, " + nameValue.value + ". We will reply to: " + emailValue.value );
+	alert("Thank You, " + nameValue.value + ". We will reply at: " + emailValue.value );
+	
 }//end of onsubmit form
 
 //on blur for Name input
@@ -80,11 +81,14 @@ function processForm()
 	}
 	
  //subscribe email validation
+ var formHandle2 = document.forms[1];
+  // var btnsub = document.getElementById("submit-email");
  //on clicking button function called
-var btnsubs = document.getElementById("submit-email");
-btnsubs.onclick = processForm2;
-function processForm2()
+formHandle2.onsubmit = process;
+// btnsub.onclick = process;
+function process()
 {
+	
 	var emailsubscribe = document.getElementById("subs-email");
 	//email validation
 	if(emailsubscribe.value === "" || emailsubscribe.value === null)
@@ -107,3 +111,5 @@ function processForm2()
 	}
 	 		
 }//end of Listener
+
+
