@@ -1,41 +1,7 @@
 window.onload = ready;
 function ready()
 {
-	// set min date value
-	 var today = new Date();
-	var day = today.getDate();
-	var mon = today.getMonth()+1;
-	var year = today.getFullYear();
-	if(day<10)
-	{
-		day = '0'+ day;
-	}
-	if(mon<10)
-	{
-		mon='0' + mon;
-	}
-	today = year + '-' + mon + '-' + day;
-	document.getElementById("form-date").setAttribute("min",today);
-	 
-	
-	//set maxdate value
-	 var enddate =  new Date();
-	enddate.setDate(new Date().getDate()+30);//30 days range for reservation
-	
-   
-	 var endday = enddate.getDate();
-	var endmon = enddate.getMonth()+1;
-	var endyear = enddate.getFullYear();
-	if(endday <10)
-	{ endday = '0' + endday;}
-	if(endmon <10)
-	{ endmon = '0' + endmon; }
-	
-	enddate = endyear + '-' + endmon + '-' + endday; 
-	
-	document.getElementById("form-date").setAttribute("max",enddate);
-		  
-  var formHandle = document.forms[0];
+	var formHandle = document.forms[0];
   //on submit form
   formHandle.onsubmit = processForm;
   function processForm()
@@ -44,9 +10,12 @@ function ready()
 	  var d = document.getElementById("form-date").value;
 	  var t =  document.getElementById("form-time").value;
 	  var ps = document.getElementById("party-size");
+	   var days = d.getDay();
+	  console.log(days);
 	  //validate date
-	  console.log(d);
+	 /*  console.log(d);
 	  var days = d.getDate();
+	  console.log(days);
 	  var month = d.getMonth();
 	  var years = d.getFullYear();
 	  
@@ -57,7 +26,7 @@ function ready()
 		  t.focus();
 		  return false;
 	  } 
-	   
+	    */
 	  //validate time
 	  if(t.value === "" || t.indexOf(":")<0)
 	  {
@@ -86,6 +55,35 @@ function ready()
 	  m.innerHTML = "Table is reserved. <br>Reservation details are:<br> Date: " + d + "<br> Time: " + t + "<br> Party Size: " + ps.value + ".";
 	return false;
 	} 
+	// set min date value
+	 var today = new Date();
+	var day = today.getDate();
+	var mon = today.getMonth()+1;
+	var year = today.getFullYear();
+	if(day<10)
+	{	day = '0'+ day;	}
+	if(mon<10)
+	{	mon='0' + mon;	}
+	today = year + '-' + mon + '-' + day;
+	document.getElementById("form-date").setAttribute("min",today);
+	 
+	
+	//set maxdate value
+	 var enddate =  new Date();
+	enddate.setDate(new Date().getDate()+45);//30 days range for reservation
+	
+	 var endday = enddate.getDate();
+	var endmon = enddate.getMonth()+1;
+	var endyear = enddate.getFullYear();
+	if(endday <10)
+	{ endday = '0' + endday;}
+	if(endmon <10)
+	{ endmon = '0' + endmon; }
+	
+	enddate = endyear + '-' + endmon + '-' + endday; 
+	
+	document.getElementById("form-date").setAttribute("max",enddate);
+  
 } 
 
 
