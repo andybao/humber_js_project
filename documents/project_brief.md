@@ -17,4 +17,6 @@ Wenyu Bao||wenyu.bao@gmail.com
 
 Page|Content|Techonology|Design Feature
 -- | - | - | -
+Home.html|Displays main content about hospital highlights and link to different pages like gallery, reservation, about us,menu and events | autoslide show for banner images. Information about restaurant is displayed after delay.|jQuery for automatic slideshow and also for paragraph to be displayed after delay.
 menu.html|Display a lunch/dessert/drink from 5 different locations|Different menu will be displayed when user hover mouse to the location link|jQuery to hide and display menu div
+
