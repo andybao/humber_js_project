@@ -84,7 +84,7 @@ function ready()
 	
 	//set maxdate value
 	 var enddate =  new Date();
-	enddate.setDate(new Date().getDate()+45);//30 days range for reservation
+	enddate.setDate(new Date().getDate()+45);//45 days range for reservation
 	
 	 var endday = enddate.getDate();
 	var endmon = enddate.getMonth()+1;
