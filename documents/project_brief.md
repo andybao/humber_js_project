@@ -16,4 +16,5 @@ Wenyu Bao||wenyu.bao@gmail.com
 - Techonology: how to develop the js effect in your page?
 
 Page|Content|Techonology|Design Feature
+-- | - | -
 menu.html|Display a lunch/dessert/drink from 5 different locations|Different menu will be displayed when user hover mouse to the location link|jQuery to hide and display menu div
