@@ -99,16 +99,17 @@ body {
 	height:120px;
 }
 /* FOOTER */
-/* #footer
+#footer
 {
-	clear:both;
+	background-color:#000000;
+	/* clear:both;
 	width:100%;
 	padding:0.5em;
-	background-color:#000000;
+	
 	color:#d3af80;
 	position:relative;
-	border-top:4px solid #d3af80;	
-} */
+	border-top:4px solid #d3af80;	 */
+}
 .footer-menu-bar
 {
 	text-align:center;
