@@ -1,3 +1,8 @@
+.page-wrapper
+{
+	margin:0 auto;
+}
+
 .hidden
 {
 	position:absolute;
@@ -11,7 +16,6 @@ main
 	width:1024px;
 	margin-left:auto;
 	margin-right:auto;
-	/* margin-top:1em; */
 	color:#000000;
 }
 #section-contact h3

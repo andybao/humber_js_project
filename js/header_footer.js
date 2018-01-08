@@ -2,8 +2,8 @@
 $(document).ready(function()
 {
 setInterval(function(){
-  $('#header_reservation a').fadeOut(500, function () {
-       $(this).fadeIn(300);
+  $('#header_reservation a').fadeOut(600, function () {
+       $(this).fadeIn(500);
     });
 },2000);
 });
