@@ -17,7 +17,7 @@ setInterval(function() {
 //slide down main introduction to restaurant
 
 	$('.home-p').hide();
-	$('.home-p').delay(5000).slideDown(3000);
+	$('.home-p').delay(3000).slideDown(3000);
 	
 });
 
