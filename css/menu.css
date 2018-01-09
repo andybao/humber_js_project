@@ -1,0 +1,46 @@
+#main-page {
+    position: relative;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border:1px solid #fce2af;
+    width: 1024px;
+    height: 500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#menu-nav {
+    float: left;
+
+
+}
+#menu-list {
+    padding-left: 0;
+}
+#menu-list li {
+    list-style-type: none;
+    padding: 0.5em;
+    font-size: 20px;
+    color: #824328;
+}
+#menu-list li:hover {
+    color: maroon;
+    text-decoration: underline;
+}
+#main {
+    float: right;
+    width: 900px;
+}
+.item {
+    display: table;
+    margin-bottom: 1em;
+}
+.item img {
+    height: 150px;
+    float: left;
+}
+.item p {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1em;
+}

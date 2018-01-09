@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2018 Wenyu Bao [wenyu.bao@gmail.com]
+ * Licensed under the MIT license.
+ *
+ */
 var maindiv = document.getElementById("maindiv");
 var startdiv = document.getElementById("startdiv");
 var scorediv = document.getElementById("scorediv");
