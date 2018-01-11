@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Andre's Restaurant Gift Cards</title>
+      <link rel="stylesheet" type="text/css" href="css/giftcards.css" />
+      <script type="text/javascript" src="js/giftcards.js">
+
+</script>
+  </head>
+  <body>
+    <div>
+      <h2>Gift Cards</h2>
+        <p>There's always a reason to celebrate! Give the gift of great food</p>
+        <p>Get your gift card from any of our locations nationwide!</p>
+
+        <form name="cards">
+          <p><h3>Select amount below!</h3></p>
+          <input type="radio" id="" name="field" value="amount" onclick='setImage(1)'/> $10
+          <input type="radio" id="" name="field" value="amount" onclick='setImage(2)'/> $30
+          <input type="radio" id="" name="field" value="amount" onclick='setImage(3)'/> $50
+          <input type="radio" id="" name="field" value="amount" onclick='setImage(4)'/> $75
+          <input type="radio" id="" name="field" value="amount" onclick='setImage(5)'/> $100
+          <input type="radio" id="" name="field" value="amount" onclick='setImage(6)'/> $150
+          <div id='imagetest'>
+          </div>
+          <div>
+            <input type="submit" name="confirm" value="Confirm!">
+          </div>
+        </form>
+
+        <div id="thanks_msg">
+          <h4>Thank you for your purchase!</h4>
+            <div>
+              <p>You have purchased $<span id=""></span> gift card.</p>
+            </div>
+        </div>
+
+  </body>
+</html>
