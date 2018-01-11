@@ -1,3 +1,4 @@
+/* Andrei Navumau style sheet*/
 html {
 	box-sizing: border-box;
 }
@@ -11,7 +12,7 @@ html {
 body {
 	font-size: 16px; /* it's 16px by default in Chrome, Firefox, just to be on the safe side*/
 	margin: 0; /*change default behavior of body*/
-	background-color: #636363;
+	/*background-color: #636363;*/
 }
 
 .hidden {
@@ -27,7 +28,7 @@ body {
 	max-width: 1024px;
 	margin: 0 auto;
 	background-color: #ffffff;
-	color:#fff;
+	/*color:#fff;*/
 	text-align: center;
 }
 
@@ -52,20 +53,41 @@ img {
 /* MAIN SECTION */
 
 main {
-	height: 800px;
-	background-color: blue;
+	min-height: 800px;
 	margin-top: 20px;
 	width:100%;
 	padding: 20px;
 }
 
-#map {
+#map, #mapp {
 	flex:2;
 	margin-right: 10px;
 	background-color: pink;
 	height:600px;
 	width:100%;
 	padding: 20px;
+}
+
+.mapContainer {
+	flex:2;
+	width:100%;
+	height:200px;
+	margin:10px;
+}
+
+.mapHeader {
+	background: #ffffff;
+}
+
+#bloor, #woodward, #spadina, #mccaul, #yonge, #kingsway {
+	flex:2;
+	width:100%;
+	height:200px;
+	margin:10px;
+}
+
+#afterMaps {
+	height:100px;
 }
 
 #map img {
@@ -78,6 +100,37 @@ main {
 	background-color: green;
 	height:600px;
 	padding: 20px;
+}
+
+h1 {
+	color: #824328;
+}
+
+h2 {
+	margin-bottom: 2px;
+	padding: 3px 0 2px 25px;
+	background: #000000;
+	color: #d3af80 !important;
+	border-radius: 50% 50% 0% 0%;
+}
+
+.locationContainer {
+	/*background: #524737;*/
+	/*padding: 15px;*/
+	padding-top:10px;
+	color: #FFE5C3;/*Paragraph font colour*/
+}
+
+.locationContent p, .locationContainer h2 {
+	margin:0;
+	padding:10px;
+}
+
+.locationContent p {
+	background:#FFE5C3;
+	color:#524737;
+	font-size: 1.5em;
+	font-family: Arial, sans-serif;
 }
 
 /* FOOTER SECTION */
