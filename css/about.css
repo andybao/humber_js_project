@@ -1,26 +1,25 @@
 /* GENERAL */
-html {
-  box-sizing:border-box;
-  font-family:Times new roman,Helvetica,sans-serif;
-  
-}
-*,*:before,*:after {
-  box-sizing:inherit;
-}
-body {
-  margin:0 auto;
-  color:#000000;
-	font-size:16px;
-}
-.page-wrapper 
+html 
 {
-  color: #909090;
-  margin:0 auto;
+  box-sizing:border-box;
+ font-family:Times new roman,Helvetica,sans-serif;
+} 
+*,*:before,*:after
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing: border-box;
 }
 .hidden
 {
 	position:absolute;
-	left:-100000px;
+	left:-10000px;
+}
+.page-wrapper
+{
+	margin:0 auto;
 }
 /* HEADER */
 #header
