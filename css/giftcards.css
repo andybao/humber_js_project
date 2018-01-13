@@ -46,7 +46,7 @@ h2, h3 {
     margin-top: 1em;
     border: 1px solid #fce2af;
     width: 1024px;
-    height: 500px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
