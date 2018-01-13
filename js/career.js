@@ -10,11 +10,7 @@ $(this).next('.contentBox').show(3000);
 
 });
  
- /* $('.contentBox').hover(
- function() {$('.contentBox').css('background', '#524737');}
- , function() {$('.contentBox').css('background', '#523C1E');}
- );
-  */
+ 
  
  
 });
