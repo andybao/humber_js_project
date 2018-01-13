@@ -93,6 +93,8 @@ h3,h4
 	text-decoration:none;
 	text-transform:uppercase;
 	padding:0.5em;
+	padding-left:5em;
+	padding-right:5em;
 	border-radius:4px;
 }
 .same-sec a:hover
