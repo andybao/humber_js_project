@@ -39,7 +39,17 @@ h2, h3 {
 	font-size: 22px;
 }
 
-
+#main {
+    position: relative;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border: 1px solid #fce2af;
+    width: 1024px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*Images*/
 
