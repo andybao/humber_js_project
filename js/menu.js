@@ -1,4 +1,4 @@
-var canidianDiv;
+var canadianDiv;
 var caribbeanDiv;
 var chineseDiv;
 var europeanDiv;
@@ -17,7 +17,7 @@ function pageLoad() {
 
   var menuList = $('#menu-list li');
 
-  canidianDiv = $('#canidian');
+  canadianDiv = $('#canadian');
   caribbeanDiv = $('#caribbean');
   chineseDiv = $('#chinese');
   europeanDiv = $('#european');
@@ -25,19 +25,20 @@ function pageLoad() {
 
   hideAllMenuDiv();
 
-  showOneMenu('canidian');
+  showOneMenu('canadian');
 
   menuList.hover(menuItemClick);
 }
 
 function menuItemClick() {
   var clickText = $(this).text();
+
   hideAllMenuDiv();
   showOneMenu(clickText.toLowerCase());
 }
 
 function hideAllMenuDiv() {
-  canidianDiv.hide();
+  canadianDiv.hide();
   caribbeanDiv.hide();
   chineseDiv.hide();
   europeanDiv.hide();
@@ -47,6 +48,5 @@ function hideAllMenuDiv() {
 function showOneMenu(location) {
   var locationID = '#' + location;
   var locationDiv = $(locationID);
-
   locationDiv.show();
 }
