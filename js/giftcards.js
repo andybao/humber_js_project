@@ -1,24 +1,39 @@
 
+var amount = document.getElementsByName("name");
 
-function setImage(fieldvalue) {
-    switch (fieldvalue) {
+function setImage(amount) {
+    switch (amount) {
     case 1:
-        document.getElementById("imagetest").innerHTML = "<img src='images/10giftcard.png>";
+        document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_10.png>";
         break;
     case 2:
-        document.getElementById("imagetest").innerHTML = "<img src='images/30giftcard.png'>";
+        document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_30.png'>";
         break;
     case 3:
-        document.getElementById("imagetest").innerHTML = "<img src='images/50giftcard.png'>";
+        document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_50.png'>";
         break;
     case 4:
-        document.getElementById("imagetest").innerHTML = "<img src='images/75giftcard.png'>";
+        document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_75.png'>";
         break;
     case 5:
-        document.getElementById("imagetest").innerHTML = "<img src='images/100giftcard.png'>";
+        document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_100.png'>";
         break;
     case 6:
-        document.getElementById("imagetest").innerHTML = "<img src='images/150giftcard.png'>";
+        document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_150.png'>";
         break;
+
+        function yourSelection() {
+          if (document.getElementsByName("name").value=="") {
+          alert("Make a selection");
+          return false;
+          }
+          else {
+            document.getElementById("thanks").innerHTML
+            alert("Thank you for your purchase!");
+
+          }
+
+        }
+
+        }
     }
-}

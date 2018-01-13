@@ -1,20 +1,49 @@
+
+
+/*General */
+
+html {
+  box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.page-wrapper {
+  text-align: center;
+	margin: 0 auto;
+}
+
+
+/* Banner */
+
+#banner {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+h2, h3 {
+	color: #824328;
+	text-align: center;
+}
+
+
+/*Main*/
+
+#main-text p {
+	text-align: center;
+	font-size: 22px;
+}
+
+
+
 /*Images*/
 
 img {
   width: 40%;
   height: auto;
 }
-
-
-/*Radio Buttons*/
-
-input .dots {
-    top: -5px;
-    width: 18px;
-    height: 18px;
-    margin: 0 4px;
-    position: relative;
-    border-radius: 50%;
-    background: #b7b7b7;
-    border: .5px solid black;
-  }
