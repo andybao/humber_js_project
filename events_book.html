@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Special Events of Andre's Restaurant</title>
+    <meta name="description" content="Special events which you can visit at Andre's restaurant">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/events.js"></script>
+    
+  </head>
+
+  <body>
+    
+      <!--start header-->
+      <header>
+        <div id="header"></div>
+        <!-- end of header menu -->
+      </header>
+      <!--header end-->
+
+      <div id="page">
+        <main>
+
+          <h1>Special Events at Andre's Restaurant</h1>
+
+          <div id="curSpecial">
+            <img id="mainImg" src="images/bernardo-ramonfaur-436540.jpg" width="600px" alt="Creative music band" title="Visit our special event with music band"/>
+          </div>
+
+          <div id="gallery" class="flex">
+            <div class="mapContainer">
+              
+              <img id="pic1" src="images/bernardo-ramonfaur-436540.jpg" width="200px" height="auto" alt="Creative music band"/>
+              <h2 class="imgHeader">Music Bands Shows</h2>
+            </div>
+
+            <div class="mapContainer">
+              
+              <img id="pic2" src="images/ester-marie-doysabas-253267.jpg" width="200px" height="auto" alt="Charity event"/>
+              <h2 class="imgHeader">Great Charity Events</h2>
+            </div>
+
+            <div class="mapContainer">
+              
+              <img id="pic3" src="images/jaciel-melnik-399287.jpg" width="200px" height="auto" alt="Visit us to play table games"/>
+              <h2 class="imgHeader">Choice of Table Games</h2>
+            </div>
+          </div>
+
+          <form action="#" method="post" id="shippingForm" name="form_ship">
+            <fieldset>
+              <legend>Here you can book your visit to our special event</legend>
+
+              <p><label for="in_Event">Select special event</label>
+                <select id="in_Event" name="f_event">
+                  <option value="0">===SELECT===</option>
+                  <option value="band">Music Band</option>
+                  <option value="char">Charity Event</option>
+                  <option value="game">Table Games</option>
+                </select>
+              </p>
+              <span id="f_event_error"></span>
+
+            <!--USER INFORMATION-->
+              <fieldset>
+                <legend>Your Information</legend>
+
+                <!-- NAME -->
+                <p>
+                  <label for="in_Name">Your Name:</label>
+                  <input type="text" id="in_Name" name="f_Name" />
+                  <span id="f_name_error"></span>
+                </p>
+
+                <!-- CUSTOMER PHONE -->
+                <p>
+                  <label for="in_Phone">Phone:</label>
+                  <input type="text" id="in_Phone" name="f_Phone" />&nbsp;&nbsp;(e.g. 987654)
+                  <span id="f_phone_error"></span>
+              </p>
+
+                <!-- WEEK -->
+                <p>
+                  <label for="in_week">Select week:</label>
+                  <select id="in_week" name="f_week">
+                  <option value="0">===SELECT===</option>
+                  <option value="1">This week</option>
+                  <option value="2">Next Week</option>
+                </select>
+                  <span id="f_week_error"></span>
+                </p>
+              </fieldset>
+             
+            <!-- SUBMIT -->
+              <p>
+                <input type="submit" value="Complete your booking" name="submit" />
+              </p>
+
+            </fieldset>
+            </form>
+
+
+            <!--#### OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES) #### -->
+            <div id="thanks_msg">
+              <h2>Thank you <span id="thanksCustomer"></span> for your booking!</h2>
+              <div>
+                <p>Your visit for event of '<span id="thanksEvent"></span>' for <span id="thanksWeek"></span> week is booked.</p>
+                
+              </div>
+            </div>
+
+        </main>
+      </div>
+
+      <section>
+        <!--footer start-->
+      <footer>
+        <div id="footer">
+      </footer>
+      <!--footer end-->
+      </section>
+
+    
+  </body>
+
+</html>
