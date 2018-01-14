@@ -47,19 +47,29 @@
         </div>
         <form name="gift_cards" action="#" method="post">
           <p><h3>Select amount below!</h3></p>
-          <input type="radio" class="dots" name="field" value="amount" onclick='setImage(1)'/> $10
-          <input type="radio" class="dots" name="field" value="amount" onclick='setImage(2)'/> $30
-          <input type="radio" class="dots" name="field" value="amount" onclick='setImage(3)'/> $50
-          <input type="radio" class="dots" name="field" value="amount" onclick='setImage(4)'/> $75
-          <input type="radio" class="dots" name="field" value="amount" onclick='setImage(5)'/> $100
-          <input type="radio" class="dots" name="field" value="amount" onclick='setImage(6)'/> $150
+          <input type="radio" name="field" value="amount" onclick='setImage(1)'/> $10
+          <input type="radio" name="field" value="amount" onclick='setImage(2)'/> $30
+          <input type="radio" name="field" value="amount" onclick='setImage(3)'/> $50
+          <input type="radio" name="field" value="amount" onclick='setImage(4)'/> $75
+          <input type="radio" name="field" value="amount" onclick='setImage(5)'/> $100
+          <input type="radio" name="field" value="amount" onclick='setImage(6)'/> $150
 
         <div id="imageShow">
           </div>
           <div>
-            <input type="submit" value="Confirm!" name="form">
+            <input type="button" value="Confirm!" onclick="confirm()">
           </div>
         </form>
+
+
+
+        <form name="radioForm">
+Radio Button 1: <input type="radio" name="myRadio" /><br />
+Radio Button 2: <input type="radio" name="myRadio" /><br />
+Radio Button 3: <input type="radio" name="myRadio" /><br />
+Radio Button 4: <input type="radio" name="myRadio" /><br /><br />
+<input type="button" value="Eval Group" onclick="evalGroup()" />
+</form>
       </div>
       </main>
       <div id="footer_div">
