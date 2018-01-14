@@ -42,13 +42,19 @@ html {
  #banner img {
 	width:1024px;
 	height:auto;
-} 
+}
 #main img
 {
 	width:40%;
 	height:auto;
 }
 
+button {
+  background-color: #824328;
+  color: white;
+  background-color: maroon; //on hover over button.
+
+}
 
 h2 {
   color: #824328;
