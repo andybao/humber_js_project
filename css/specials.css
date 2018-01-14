@@ -8,7 +8,10 @@
 /*https://www.freepik.com/free-photo/celebration-party-gourmet-table-buffet_1044069.htm#term=buffet&page=1&position=3*/
 
 /*General*/
-
+.page-wrapper
+{
+	margin:0 auto;
+}
 #main {
     position: relative;
     padding: 1em;
@@ -20,10 +23,23 @@
     margin-left: auto;
     margin-right: auto;
 }
-
-#main img {
-  width: 40%;
-  height: auto;
+#banner
+{
+	width:1024px;
+	height:auto;
+	margin-bottom:1em;
+	position: relative;
+    margin:0 auto;
+	display:block;
+}
+ #banner img {
+	width:1024px;
+	height:auto;
+} 
+#main img
+{
+	width:40%;
+	height:auto;
 }
 
 
