@@ -1,6 +1,7 @@
 
 var amount = document.getElementsByName("name");
 
+
 function setImage(amount) {
     switch (amount) {
     case 1:
@@ -22,16 +23,19 @@ function setImage(amount) {
         document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_150.png'>";
         break;
 
-        function yourSelection() {
-          if (document.getElementsByName("name").value=="") {
-          alert("Make a selection");
-          return false;
-          }
-          else {
-            document.getElementById("thanks").innerHTML
-            alert("Thank you for your purchase!");
+        var yourSelection = document.getElementsByName('form');
+        yourSelection[0].submit();
 
-          }
+        // function yourSelection() {
+        //   if (document.getElementsByName("name").value=="") {
+        //   alert("Make a selection");
+        //   return false;
+        //   }
+        //   else {
+        //     document.getElementById("thanks").innerHTML
+        //     alert("Thank you for your purchase!");
+        //
+        //   }
 
         }
 
