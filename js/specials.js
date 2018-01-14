@@ -1,6 +1,6 @@
 //alert();
 
-function myFunction1() {
+function special1() {
         document.getElementById("mon").style.display = "block";
         document.getElementById("tues").style.display = "none";
         document.getElementById("wed").style.display = "none";
@@ -10,7 +10,7 @@ function myFunction1() {
         document.getElementById("sun").style.display = "none";
     }
 
-    function myFunction2() {
+    function special2() {
       document.getElementById("mon").style.display = "none";
       document.getElementById("tues").style.display = "block";
       document.getElementById("wed").style.display = "none";
@@ -21,7 +21,7 @@ function myFunction1() {
 
     }
 
-    function myFunction3() {
+    function special3() {
       document.getElementById("mon").style.display = "none";
       document.getElementById("tues").style.display = "none";
       document.getElementById("wed").style.display = "block";
@@ -33,7 +33,7 @@ function myFunction1() {
 
     }
 
-    function myFunction4() {
+    function special4() {
       document.getElementById("mon").style.display = "none";
       document.getElementById("tues").style.display = "none";
       document.getElementById("wed").style.display = "none";
@@ -43,7 +43,7 @@ function myFunction1() {
       document.getElementById("sun").style.display = "none";
     }
 
-    function myFunction5() {
+    function special5() {
       document.getElementById("mon").style.display = "none";
       document.getElementById("tues").style.display = "none";
       document.getElementById("wed").style.display = "none";
@@ -53,7 +53,7 @@ function myFunction1() {
       document.getElementById("sun").style.display = "none";
     }
 
-    function myFunction6() {
+    function special6() {
       document.getElementById("mon").style.display = "none";
       document.getElementById("tues").style.display = "none";
       document.getElementById("wed").style.display = "none";
@@ -63,7 +63,7 @@ function myFunction1() {
       document.getElementById("sun").style.display = "none";
     }
 
-    function myFunction7() {
+    function special7() {
       document.getElementById("mon").style.display = "none";
       document.getElementById("tues").style.display = "none";
       document.getElementById("wed").style.display = "none";
@@ -76,21 +76,21 @@ function myFunction1() {
 
 
 var divs = ["mon", "tues", "wed", "thurs", "fri", "sat", "sun"];
-   var visibleDivId = null;
-   function divVisibility(divId) {
-     if(visibleDivId === divId) {
-       visibleDivId = null;
+   var seeDiv = null;
+   function seeDiv(divId) {
+     if(seeDiv === divId) {
+       seeDiv = null;
      } else {
-       visibleDivId = divId;
+       seeDiv = divId;
      }
-     hideNonVisibleDivs();
+     hideDiv();
    }
-   function hideNonVisibleDivs() {
+   function hideDiv() {
      var i, divId, div;
      for(i = 0; i < divs.length; i++) {
        divId = divs[i];
        div = document.getElementById(divId);
-       if(visibleDivId === divId) {
+       if(seeDiv === divId) {
          div.style.display = "block";
        } else {
          div.style.display = "none";
