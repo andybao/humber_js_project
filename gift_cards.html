@@ -47,17 +47,17 @@
         </div>
         <form name="gift_cards" action="#" method="post">
           <p><h3>Select amount below!</h3></p>
-          <input type="radio" name="field" onclick='setImage(1)'/> $10
-          <input type="radio" name="field" onclick='setImage(2)'/> $30
-          <input type="radio" name="field" onclick='setImage(3)'/> $50
-          <input type="radio" name="field" onclick='setImage(4)'/> $75
-          <input type="radio" name="field" onclick='setImage(5)'/> $100
-          <input type="radio" name="field" onclick='setImage(6)'/> $150
+          <input type="radio" name="field" id="10" onclick='setImage(1)'/> $10
+          <input type="radio" name="field" id="30" onclick='setImage(2)'/> $30
+          <input type="radio" name="field" id="50" onclick='setImage(3)'/> $50
+          <input type="radio" name="field" id="75" onclick='setImage(4)'/> $75
+          <input type="radio" name="field" id="100" onclick='setImage(5)'/> $100
+          <input type="radio" name="field" id="150" onclick='setImage(6)'/> $150
 
         <div id="imageShow">
           </div>
           <div>
-            <input type="submit" value="Confirm!" onclick="confirm()">
+            <input type="submit" name="mysubmit" value="Confirm!" />
           </div>
         </form>
       </div>

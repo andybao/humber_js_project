@@ -23,8 +23,18 @@ function setImage(amount) {
         document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_150.png'>";
         break;
 
-        var yourSelection = document.getElementsByName('form');
-        yourSelection[0].submit();
+        function getCard(){
+        var card = document.querySelector('input[name="scores"]:checked').value;
+        if(!score){
+          alert('No card was selected. Try again.');
+          return false;
+        }
+        else{
+          alert(score + ' was selected!');
+        }
+      }
+        // var yourSelection = document.getElementsByName('form');
+        // yourSelection[0].submit();
 
         // function yourSelection() {
         //   if (document.getElementsByName("name").value=="") {
