@@ -5,7 +5,7 @@ window.onload = pageReady;
 function pageReady(){
 
 // Show images on mouse over
-	var allImages = document.querySelectorAll("img");
+	var allImages = document.querySelectorAll(".event-img");
 	var originalSrc = allImages[0].src;
 
 	for (var i=1; i<allImages.length; i++) {

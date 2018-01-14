@@ -15,7 +15,10 @@ html {
 
 
 /*General*/
-
+.page-wrapper
+{
+	margin:0 auto;
+}
 #main {
     position: relative;
     padding: 1em;
@@ -27,10 +30,23 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
-
-#main img {
-  width: 40%;
-  height: auto;
+#banner
+{
+	width:1024px;
+	height:auto;
+	margin-bottom:1em;
+	position: relative;
+    margin:0 auto;
+	display:block;
+}
+ #banner img {
+	width:1024px;
+	height:auto;
+} 
+#main img
+{
+	width:40%;
+	height:auto;
 }
 
 
