@@ -1,11 +1,18 @@
-/*Images*/
+/*General */
 
-/*https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/d13f-201473-poutine.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.jpg*/
-/*https://pixabay.com/en/wings-chicken-wings-chicken-2709068/*/
-/*https://pixabay.com/en/gourmet-fried-foods-spring-rolls-809866/*/
-/*https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/buffalo-chicken-pizza.jpg?itok=KtnMmj6Q*/
-/*https://en.wikipedia.org/wiki/Doubles_(food)#/media/File:FOOD_Doubles_2.jpg*/
-/*https://www.freepik.com/free-photo/celebration-party-gourmet-table-buffet_1044069.htm#term=buffet&page=1&position=3*/
+html {
+  box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.page-wrapper {
+  text-align: center;
+	margin: 0 auto;
+}
+
 
 /*General*/
 
@@ -31,9 +38,11 @@ h2 {
   color: #824328;
   text-align: center;
 }
-/*p {
-  text-align: center;
-}*/
+
+#banner img {
+  align-items: center;
+  height: auto;
+}
 
 
 #mon, #tues, #wed, #thurs, #fri, #sat, #sun {
@@ -44,3 +53,11 @@ h2 {
     background-color: black;
     display: none;
   }
+  /*Images*/
+
+  /*https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/d13f-201473-poutine.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.jpg*/
+  /*https://pixabay.com/en/wings-chicken-wings-chicken-2709068/*/
+  /*https://pixabay.com/en/gourmet-fried-foods-spring-rolls-809866/*/
+  /*https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/buffalo-chicken-pizza.jpg?itok=KtnMmj6Q*/
+  /*https://en.wikipedia.org/wiki/Doubles_(food)#/media/File:FOOD_Doubles_2.jpg*/
+  /*https://www.freepik.com/free-photo/celebration-party-gourmet-table-buffet_1044069.htm#term=buffet&page=1&position=3*/

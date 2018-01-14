@@ -5,7 +5,7 @@ var amount = document.getElementsByName("name");
 function setImage(amount) {
     switch (amount) {
     case 1:
-        document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_10.png>";
+        document.getElementById("imageShow").innerHTML = "<img src='images/10giftcard.png>";
         break;
     case 2:
         document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_30.png'>";
@@ -40,4 +40,3 @@ function setImage(amount) {
         }
 
         }
-    }
