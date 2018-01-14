@@ -22,17 +22,21 @@ function setImage(amount) {
     case 6:
         document.getElementById("imageShow").innerHTML = "<img src='images/giftcard_150.png'>";
         break;
-}
-        var yourSelection = document.getElementsByName("field");
+
+        var yourSelection = document.getElementsByName('form');
         yourSelection[0].submit();
 
-        function yourSelection() {
-          if (document.getElementsByName("name").value=="") {
-          alert("Make a selection");
-          return false;
-          }
-          else {
-            document.getElementById("thanks").innerHTML
-            alert("Thank you for your purchase!");
+        // function yourSelection() {
+        //   if (document.getElementsByName("name").value=="") {
+        //   alert("Make a selection");
+        //   return false;
+        //   }
+        //   else {
+        //     document.getElementById("thanks").innerHTML
+        //     alert("Thank you for your purchase!");
+        //
+        //   }
 
-          }
+        }
+
+        }
